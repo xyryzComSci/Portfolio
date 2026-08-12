@@ -138,7 +138,7 @@ export const projects: Project[] = [
     status: "IN PROGRESS",
     hook: "Admin console and bulletin system for SSU's Municipal Psychology Student Organization, with tiered permissions and a two-step registration approval gate.",
     tags: ["Next.js", "Tailwind CSS", "Supabase", "Row-Level Security"],
-    cover: "/projects/mupo/MUPO-TitleCard.jpg",
+    cover: "/projects/mupo/Mupo-TitleCard.jpg",
     stats: [
       { value: "205 ln", label: "PRD" },
       { value: "324 ln", label: "Technical design doc" },
