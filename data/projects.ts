@@ -92,7 +92,7 @@ export const projects: Project[] = [
     status: "SHIPPED",
     hook: "Replaced VSU's paper-based Research Ethics Review Board process with a centralized platform across 4 user roles and 3 review workflows.",
     tags: ["Laravel", "React", "PostgreSQL", "Supabase", "Railway"],
-    cover: null,
+    cover: "/projects/herc/HERC-Login.jpg",
     stats: [
       { value: "4.97 / 5", label: "performance efficiency, ISO/IEC 25010" },
       { value: "4.89 / 5", label: "functional suitability, ISO/IEC 25010" },
@@ -105,20 +105,28 @@ export const projects: Project[] = [
     approach: [
       "Mapped the existing paper procedure with stakeholders before writing any code, rather than digitizing the paper form as-is — the risk wasn't the build, it was quietly changing who's accountable for what in translation.",
       "Modeled 4 distinct user roles and 3 review workflows so a submission can't advance a stage without the assigned reviewer's sign-off, reproducing digitally the accountability the paper trail used to carry.",
-      "Revised the admin's 'add reviewer' function mid-project after client feedback during pre-defense review: the original design sent an authentication link by email to a reviewer signup page; the client wanted the admin to create and save a new reviewer's details directly, without depending on a self-serve signup step.",
       "Gathered further structural feedback post-defense from the SRC panel, advisor, and client representative — pagination, handling expired university emails for alumni/resigned faculty, and integration with university-hosted infrastructure are documented as identified future work, not yet built.",
     ],
     images: [
       {
-        src: null,
-        pending: true,
+        src: "/projects/herc/HERC-Login.jpg",
         caption:
-          "The reviewer-creation admin screen — the function reworked mid-project so an admin saves a reviewer's details directly.",
+          "The centralized login portal, restricting system access exclusively to university email accounts.",
       },
       {
-        src: null,
-        pending: true,
-        caption: "Role-based review status — where a submission stands, and who owns the next step.",
+        src: "/projects/herc/HERC-Dashboard.jpg",
+        caption:
+          "The administrative dashboard tracking total submissions, active reviews, and a real-time log of protocol status changes.",
+      },
+      {
+        src: "/projects/herc/HERC-MySubmissions.jpg",
+        caption:
+          "The researcher's view, providing centralized tracking of all submitted protocols and their current review stages.",
+      },
+      {
+        src: "/projects/herc/HERC-PostApproval.jpg",
+        caption:
+          "Post-approval monitoring interface displaying active ethics clearance history and required follow-up forms.",
       },
     ],
     outcome:
@@ -130,7 +138,7 @@ export const projects: Project[] = [
     status: "IN PROGRESS",
     hook: "Admin console and bulletin system for SSU's Municipal Psychology Student Organization, with tiered permissions and a two-step registration approval gate.",
     tags: ["Next.js", "Tailwind CSS", "Supabase", "Row-Level Security"],
-    cover: "/projects/mupo/mupo-dashboard.png",
+    cover: "/projects/mupo/MUPO-TitleCard.jpg",
     stats: [
       { value: "205 ln", label: "PRD" },
       { value: "324 ln", label: "Technical design doc" },
@@ -148,13 +156,29 @@ export const projects: Project[] = [
     ],
     images: [
       {
-        src: "/projects/mupo/mupo-confirm-step.png",
+        src: "/projects/mupo/MUPO-Login.jpg",
         caption:
-          "The approval gate stated in plain language, not just enforced silently — the interface explains why the user is waiting.",
+          "The mobile-first login interface, serving as the secure access point for the organization.",
       },
       {
-        src: "/projects/mupo/mupo-dashboard.png",
-        caption: "A live dashboard, not a shell — 55 members and 6 committees of real org data.",
+        src: "/projects/mupo/MUPO-Dashboard.jpg",
+        caption: "The personalized home dashboard, surfacing upcoming dates, pinned announcements, and recent files at a glance.",
+      },
+      {
+        src: "/projects/mupo/MUPO-Calendar.jpg",
+        caption: "The centralized org-wide and committee calendar, replacing scattered chat messages with a single source of truth for dates.",
+      },
+      {
+        src: "/projects/mupo/MUPO-Bulletin.jpg",
+        caption: "The bulletin board for official announcements, ensuring important updates aren't lost in fast-moving group chats.",
+      },
+      {
+        src: "/projects/mupo/MUPO-Files.jpg",
+        caption: "The hybrid file storage system, supporting direct downloads and external links to manage storage quota efficiently.",
+      },
+      {
+        src: "/projects/mupo/MUPO-More.jpg",
+        caption: "The profile and settings view, displaying role-based permissions maintained safely by the system administrator.",
       },
     ],
     outcome:
