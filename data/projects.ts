@@ -78,6 +78,14 @@ export const projects: Project[] = [
         caption: "WF2, the meter-reading OCR pass — sheet images in, structured readings out.",
       },
       {
+        src: "/projects/rentflow/rentflow-wf3-invoice-send.png",
+        caption: "WF3, the invoice send loop. Called after operator confirmation, it loops through approved invoices, sends them via Gmail, and explicitly reports failures by unit number.",
+      },
+      {
+        src: "/projects/rentflow/rentflow-wf4-rent-cron.png",
+        caption: "WF4, the daily rent cron. It posts a heartbeat line to Telegram even when nothing is due, because silence is ambiguous between 'nothing due' and a broken cron job.",
+      },
+      {
         src: "/projects/rentflow/rentflow-wf5-error-handler.png",
         caption:
           "WF5, the dedicated error handler — anything escaping a workflow's own error branch surfaces to the operator in plain words.",
@@ -138,7 +146,7 @@ export const projects: Project[] = [
     status: "IN PROGRESS",
     hook: "Admin console and bulletin system for SSU's Municipal Psychology Student Organization, with tiered permissions and a two-step registration approval gate.",
     tags: ["Next.js", "Tailwind CSS", "Supabase", "Row-Level Security"],
-    cover: "/projects/mupo/MUPO-TitleCard.jpg",
+    cover: "/projects/mupo/Mupo-TitleCard.jpg",
     stats: [
       { value: "205 ln", label: "PRD" },
       { value: "324 ln", label: "Technical design doc" },
@@ -149,7 +157,7 @@ export const projects: Project[] = [
     problem:
       "The org chart, event dates, announcements, and files for a 55-member, 6-committee student organization were scattered with no single source of truth and no controlled way to bring on new officers.",
     approach: [
-      "Row-level security is the real access-control layer, not just the UI — every role's permissions are enforced at the database, so a front-end bug can't accidentally expose another committee's content.",
+      "Row-level security is the real access-control layer, not just the UI — every role's permissions are enforced at the database, so a front-end bug can accidentally expose another committee's content.",
       "New registrations clear two separate steps: an email confirmation, then a manual Sys Admin approval — identity and authorization are never conflated into a single click, and the interface tells the user why they're waiting instead of leaving them guessing.",
       "Chose a link-first, hybrid file storage model with a 1GB quota guard instead of storing every upload directly — a small tradeoff in convenience against a system that won't silently run out of room or get expensive to maintain as the org's content grows.",
       "Built using Claude Code in a phase-gated, agent-delegated workflow — each build phase is scoped against the written PRD and engineering plan first, so implementation follows a document instead of improvising against a chat history.",
