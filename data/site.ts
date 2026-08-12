@@ -9,7 +9,7 @@ export const site = {
   // Rendered as plain selectable text, never as an anchor, to keep it out of
   // the DOM as a crawlable link.
   linkedinText: "linkedin.com/in/xyryz-patagnan-751048221",
-  github: "https://github.com/", // TODO: real GitHub URL
+  github: "https://github.com/xyryzComSci", // TODO: real GitHub URL
   githubReady: false,
   resumePath: "/Xyryz_Patagnan-CB-Resume.pdf", // TODO: add the actual PDF to /public
   resumeReady: true,

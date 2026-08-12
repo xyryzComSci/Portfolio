@@ -1,5 +1,5 @@
 export const hero = {
-  eyebrow: "Case file — portfolio / Eastern Visayas, PH",
+  eyebrow: "AUTOMATION & FULL-STACK DEVELOPER | PH",
   title:
     "I take a project from intake to handoff, and leave behind something you can run without me.",
   subhead:
