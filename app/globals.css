@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --surface: 250 250 250;
+    --surface-alt: 244 244 242;
+    --content: 10 10 10;
+    --muted: 82 82 91;
+    --hairline: 224 224 220;
+    --chip: 238 238 234;
+  }
+
+  .dark {
+    --surface: 21 24 26;
+    --surface-alt: 28 32 34;
+    --content: 240 240 236;
+    --muted: 160 163 160;
+    --hairline: 54 59 61;
+    --chip: 38 43 45;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-content font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-stamp-green/25;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-stamp-green;
+  }
+}
+
+@layer components {
+  /* Small monospace uppercase label that sits above a section title. */
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-[0.18em];
+  }
+
+  .tag-chip {
+    @apply inline-flex items-center rounded-sm bg-chip px-2 py-[3px] font-mono text-[11px] text-muted;
+  }
+
+  .shell {
+    @apply mx-auto w-full max-w-shell px-6;
+  }
+}
