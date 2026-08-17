@@ -11,7 +11,7 @@ export const site = {
   linkedinText: "linkedin.com/in/xyryz-patagnan-751048221",
   github: "https://github.com/xyryzComSci", // TODO: real GitHub URL
   githubReady: false,
-  resumePath: "/Xyryz_Patagnan-CB-Resume.pdf", // TODO: add the actual PDF to /public
+  resumePath: "/Xyryz_Patagnan-Resume(1).pdf", // TODO: add the actual PDF to /public
   resumeReady: true,
   headshot: "/headshot.jpg",
   hometown: "Eastern Visayas", // TODO: exact town/city
